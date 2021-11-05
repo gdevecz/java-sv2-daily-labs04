@@ -14,7 +14,5 @@ public class PlaneMain {
         System.out.println(plane.numberOfPackages());
         System.out.println(plane.addPassenger(p3));
         System.out.println(plane.numberOfPackages());
-
-
     }
 }

@@ -11,8 +11,8 @@ public class Passenger {
         this.packages = packages;
     }
 
-    public void addPackage(int numberOfPackages) {
-        packages += numberOfPackages;
+    public void addPackage(int addNumberOfPackages) {
+        packages += addNumberOfPackages;
     }
 
     public String getPassengerID() {
