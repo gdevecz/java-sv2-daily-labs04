@@ -9,18 +9,27 @@ public class Plane {
 
     private int maxCapacity;
 
+    private int maxPackageCapacity;
+
+    private int actualPackageCapacity;
+
     private List<Passenger> passengers = new ArrayList<>();
 
     public Plane(String planeID, int maxCapacity) {
         this.planeID = planeID;
         this.maxCapacity = maxCapacity;
+        actualPackageCapacity = 0;
     }
 
     public boolean addPassenger(Passenger passenger) {
         if (passengers.size() == maxCapacity) {
             return false;
         }
+        if(actualPackageCapacity+ passenger.getPackages()> maxPackageCapacity){
+            return false;
+        }
         passengers.add(passenger);
+        actualPackageCapacity+=passenger.getPackages();
         return true;
     }
 
