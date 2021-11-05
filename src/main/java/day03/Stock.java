@@ -33,8 +33,10 @@ public class Stock {
 //                i++;
 //            }
 //            localSum = shares.get(i - 1) - localSum;
-//             Igazából ez lenne a maximális haszon( a felszálló ágakban bent van, a leszálló ágak idején másik részvényben)
+
+//             Igazából ez lenne a maximális haszon( a felszálló ágakban bent van, olcsón vesz, drágábban elad többször is)
 //            maxSum += sum;
+
 //            Ez csak egyszeri max lokális emelkedésből származó haszon
 //            if (localSum > maxSum) {
 //                maxSum = localSum;
